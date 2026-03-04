@@ -1,0 +1,475 @@
+/* Green Occasion Custom Case Study Theme */
+
+:root {
+    --go-offwhite: #f8f9f5;
+    --go-sage: #e8ede3;
+    --go-sage-light: #c2d1b8;
+    --go-deepgreen: #1e362d;
+    --go-text-dark: #1a2923;
+    --go-text-light: #f5f7f2;
+}
+
+/* Base Overrides for Green Occasion Theme */
+body.go-theme {
+    background-color: var(--go-offwhite);
+    color: var(--go-text-dark);
+}
+
+.go-nav .logo,
+.go-nav .nav-links a {
+    color: var(--go-text-dark);
+}
+
+.go-nav .nav-links a::after {
+    background-color: var(--go-deepgreen);
+}
+
+.go-nav .nav-links a:hover {
+    color: var(--go-deepgreen);
+}
+
+.text-cream-theme {
+    color: var(--go-text-light);
+}
+
+.text-sage-light {
+    color: var(--go-sage-light);
+}
+
+.bg-offwhite {
+    background-color: var(--go-offwhite);
+}
+
+.bg-sage {
+    background-color: var(--go-sage);
+}
+
+.bg-deepgreen {
+    background-color: var(--go-deepgreen);
+    color: var(--go-text-light);
+}
+
+/* Typography */
+.go-headline {
+    font-family: var(--serif-font);
+    font-size: 3.5rem;
+    font-weight: 400;
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
+    color: var(--go-deepgreen);
+    letter-spacing: -0.02em;
+}
+
+.go-subtitle {
+    font-family: var(--sans-font);
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: var(--go-deepgreen);
+    opacity: 0.8;
+    margin-bottom: 2rem;
+}
+
+.go-description {
+    font-family: var(--sans-font);
+    font-size: 1.15rem;
+    line-height: 1.6;
+    color: rgba(26, 41, 35, 0.75);
+    margin-bottom: 3rem;
+    max-width: 90%;
+}
+
+.go-section-title {
+    font-family: var(--serif-font);
+    font-size: 2.25rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    letter-spacing: -0.01em;
+}
+
+.go-body {
+    font-family: var(--sans-font);
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: rgba(26, 41, 35, 0.8);
+}
+
+.bg-deepgreen .go-body {
+    color: rgba(245, 247, 242, 0.85);
+}
+
+.mb-small {
+    margin-bottom: 1.5rem;
+}
+
+.mt-small {
+    margin-top: 1.5rem;
+}
+
+.mt-large {
+    margin-top: 4rem;
+}
+
+.center-text {
+    text-align: center;
+}
+
+/* Structures */
+.go-section {
+    padding: 5rem 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.go-narrow-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.max-w-700 {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Hero Section */
+.go-hero {
+    min-height: 100vh;
+    padding-top: 6rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.go-hero-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.go-hero-text {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Metadata Row */
+.go-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(30, 54, 45, 0.1);
+}
+
+.meta-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.meta-label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 500;
+    color: rgba(26, 41, 35, 0.5);
+}
+
+.meta-value {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--go-deepgreen);
+}
+
+/* Hero Visual */
+.go-hero-visual {
+    position: relative;
+    width: 100%;
+}
+
+.go-main-image {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 40px 80px rgba(18, 51, 36, 0.15);
+}
+
+.float-subtle {
+    animation: slowFloat 8s ease-in-out infinite;
+}
+
+@keyframes slowFloat {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* Botanical Gradients */
+.go-gradient-orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0.4;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.glow-top-left {
+    top: -10%;
+    left: -5%;
+    width: 50vw;
+    height: 50vw;
+    background: radial-gradient(circle, var(--go-sage) 0%, transparent 70%);
+}
+
+.glow-bottom-right {
+    bottom: -10%;
+    right: -10%;
+    width: 60vw;
+    height: 60vw;
+    background: radial-gradient(circle, #d2dfc9 0%, transparent 70%);
+}
+
+/* Grids & Layouts */
+.go-overview-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+}
+
+.go-goals-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+}
+
+.go-goal-card {
+    background: rgba(255, 255, 255, 0.5);
+    padding: 3rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(30, 54, 45, 0.03);
+}
+
+.go-goal-title {
+    font-family: var(--serif-font);
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    color: var(--go-deepgreen);
+}
+
+.go-split-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+}
+
+.reverse-layout {
+    flex-direction: column-reverse;
+}
+
+.go-split-text {
+    flex: 1;
+    width: 100%;
+}
+
+.go-split-visual {
+    flex: 1;
+    position: relative;
+    width: 100%;
+}
+
+/* Lists */
+.go-bullet-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-left: 0;
+}
+
+.go-bullet-list li {
+    font-family: var(--sans-font);
+    font-size: 1.15rem;
+    position: relative;
+    padding-left: 1.5rem;
+    color: rgba(245, 247, 242, 0.85);
+    /* Default light for dark bg */
+}
+
+.go-bullet-list.dark-bullets li {
+    color: rgba(26, 41, 35, 0.8);
+}
+
+.go-bullet-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: var(--go-sage-light);
+}
+
+.go-bullet-list.dark-bullets li::before {
+    background-color: var(--go-deepgreen);
+}
+
+.italic-statement {
+    font-style: italic;
+    opacity: 0.7;
+}
+
+/* Mockups & UI Frames */
+.go-mockup-frame {
+    background-color: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    /* Soft botanical shadow */
+    box-shadow: 0 30px 60px rgba(30, 54, 45, 0.12), 0 10px 20px rgba(30, 54, 45, 0.05);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.go-mockup-frame.grand-frame {
+    border-radius: 24px;
+}
+
+.hover-lift:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 40px 80px rgba(30, 54, 45, 0.15), 0 15px 25px rgba(30, 54, 45, 0.08);
+}
+
+.hover-glow:hover {
+    transform: translateY(-5px);
+    /* Subtle green glow on dark bg */
+    box-shadow: 0 0 80px rgba(194, 209, 184, 0.15), 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+.go-ui-screenshot {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Small Crops in Visual Language */
+.grid-2-crops {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.small-crop {
+    flex: 1;
+    height: 400px;
+}
+
+.object-cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.object-cover-top {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+    .go-headline {
+        font-size: 4.5rem;
+    }
+
+    .go-section-title {
+        font-size: 2.75rem;
+    }
+
+    .go-section {
+        padding: 6rem 3rem;
+    }
+
+    .go-hero {
+        padding-top: 8rem;
+    }
+
+    .go-goals-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .grid-2-crops {
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 1024px) {
+    .go-headline {
+        font-size: 5.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .go-section-title {
+        font-size: 3.5rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .go-section {
+        padding: 8rem 4rem;
+    }
+
+    .go-hero {
+        padding-top: 10rem;
+    }
+
+    .go-hero-container {
+        display: grid;
+        grid-template-columns: 1fr 1.3fr;
+        gap: 4rem;
+    }
+
+    .go-meta {
+        justify-content: flex-start;
+    }
+
+    .go-overview-grid {
+        display: grid;
+        grid-template-columns: 1fr 1.5fr;
+        gap: 6rem;
+    }
+
+    .go-goals-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .go-split-layout {
+        flex-direction: row;
+        gap: 6rem;
+    }
+
+    .reverse-layout {
+        flex-direction: row-reverse;
+    }
+
+    .go-split-text {
+        flex: 1;
+    }
+
+    .go-split-visual {
+        flex: 1.2;
+    }
+}

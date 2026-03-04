@@ -1,0 +1,574 @@
+/* Bloom & Co Custom Case Study Theme */
+
+:root {
+    --bloom-cream: #faf9f6;
+    --bloom-beige: #f3efea;
+    --bloom-gold: #cba871;
+    --bloom-deep-green: #2a3d31;
+    --bloom-text-dark: #3a3835;
+    --bloom-text-light: #faf9f6;
+}
+
+/* Base Overrides */
+body.bloom-theme {
+    background-color: var(--bloom-cream);
+    color: var(--bloom-text-dark);
+}
+
+.bloom-nav .logo,
+.bloom-nav .nav-links a {
+    color: var(--bloom-text-dark);
+}
+
+.bloom-nav .nav-links a::after {
+    background-color: var(--bloom-gold);
+}
+
+.bloom-nav .nav-links a:hover {
+    color: var(--bloom-gold);
+}
+
+.text-cream-theme {
+    color: var(--bloom-text-light);
+}
+
+.text-gold {
+    color: var(--bloom-gold);
+}
+
+.text-cream {
+    color: rgba(250, 249, 246, 0.85);
+}
+
+.bg-cream {
+    background-color: var(--bloom-cream);
+}
+
+.bg-warm-beige {
+    background-color: var(--bloom-beige);
+}
+
+.bg-deep-green {
+    background-color: var(--bloom-deep-green);
+    color: var(--bloom-text-light);
+}
+
+.bg-deep-green .bloom-headline,
+.bg-deep-green .bloom-section-title {
+    color: var(--bloom-text-light);
+}
+
+.bg-deep-green .bloom-body {
+    color: rgba(250, 249, 246, 0.85);
+}
+
+/* Typography */
+.bloom-headline {
+    font-family: var(--serif-font);
+    font-size: 3.5rem;
+    font-weight: 500;
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
+    color: var(--bloom-deep-green);
+}
+
+.bloom-subtitle {
+    font-family: var(--serif-font);
+    font-size: 2rem;
+    font-weight: 400;
+    font-style: italic;
+    color: var(--bloom-gold);
+    margin-bottom: 2rem;
+}
+
+.bloom-description {
+    font-family: var(--sans-font);
+    font-size: 1.15rem;
+    line-height: 1.6;
+    color: rgba(58, 56, 53, 0.8);
+    max-width: 90%;
+}
+
+.bloom-section-title {
+    font-family: var(--serif-font);
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-bottom: 2.5rem;
+    color: var(--bloom-deep-green);
+}
+
+.small-title {
+    font-size: 2.5rem;
+}
+
+.bloom-body {
+    font-family: var(--sans-font);
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: rgba(58, 56, 53, 0.85);
+}
+
+.mb-large {
+    margin-bottom: 3rem;
+}
+
+.mt-small {
+    margin-top: 1.5rem;
+}
+
+.mt-large {
+    margin-top: 5rem;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.max-w-700 {
+    max-width: 700px;
+}
+
+.italic-statement {
+    font-style: italic;
+    font-family: var(--serif-font);
+    font-size: 1.5rem;
+    color: var(--bloom-gold);
+}
+
+/* Structures */
+.bloom-section {
+    padding: 5rem 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Hero Section */
+.bloom-hero {
+    min-height: 100vh;
+    padding-top: 8rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.bloom-hero-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.bloom-hero-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.bloom-hero-visual {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Metadata Row */
+.bloom-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid rgba(203, 168, 113, 0.3);
+}
+
+.meta-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.meta-label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 500;
+    color: rgba(58, 56, 53, 0.5);
+}
+
+.meta-value {
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: var(--serif-font);
+    color: var(--bloom-deep-green);
+}
+
+/* User Journey Steps */
+.journey-steps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 3rem;
+}
+
+.step {
+    padding: 0.75rem 1.5rem;
+    background-color: #fff;
+    border-radius: 50px;
+    font-family: var(--sans-font);
+    font-size: 0.9rem;
+    color: var(--bloom-deep-green);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.03);
+    border: 1px solid rgba(203, 168, 113, 0.1);
+}
+
+.arrow {
+    color: var(--bloom-gold);
+}
+
+/* Grids & Layouts */
+.bloom-overview-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.bloom-split-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+}
+
+.reverse-layout {
+    flex-direction: column-reverse;
+}
+
+.bloom-split-text {
+    flex: 1;
+    width: 100%;
+}
+
+.bloom-split-visual {
+    flex: 1;
+    position: relative;
+    width: 100%;
+}
+
+.bloom-grid-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4rem;
+}
+
+.bloom-grid-col {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Mobile Mockups - iPhone Style */
+.mobile-mockup {
+    width: 100%;
+    max-width: 300px;
+    aspect-ratio: 1/2.05;
+    background-color: #fff;
+    border-radius: 40px;
+    padding: 12px;
+    box-shadow: 0 20px 40px rgba(58, 56, 53, 0.08);
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0.02);
+    margin: 0 auto;
+}
+
+/* Device screen area inside padding */
+.mobile-mockup::after {
+    content: '';
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+    border-radius: 28px;
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.03);
+    pointer-events: none;
+}
+
+/* Minimal "notch" indicator */
+.mobile-mockup::before {
+    content: '';
+    position: absolute;
+    top: 22px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30%;
+    height: 6px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    z-index: 10;
+}
+
+.mobile-ui {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 28px;
+    display: block;
+}
+
+/* Visual Layouts for Mockups */
+.mobile-mockup-group {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+
+.offset-down {
+    transform: translateY(0);
+}
+
+.single-large {
+    width: 340px;
+    height: 697px;
+    margin: 0 auto;
+}
+
+.centered-mockup {
+    margin: 0 auto;
+}
+
+.align-center {
+    display: flex;
+    justify-content: center;
+}
+
+.float-subtle {
+    animation: slowFloat 8s ease-in-out infinite;
+}
+
+/* Final Showcase Grid */
+.showcase-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    padding: 2rem 0;
+}
+
+.showcase-mockup {
+    width: 100%;
+    aspect-ratio: 1/2.05;
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 8px;
+    box-shadow: 0 20px 40px rgba(58, 56, 53, 0.06);
+    transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.showcase-mockup:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 30px 50px rgba(58, 56, 53, 0.1);
+}
+
+.showcase-mockup .mobile-ui {
+    border-radius: 22px;
+}
+
+/* Decorations */
+.bloom-floral-texture {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.03;
+    background-image: url('data:image/svg+xml;utf8,<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="40" fill="none" stroke="%23cba871" stroke-width="1"/></svg>');
+    background-size: 600px;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.floral-accent {
+    position: absolute;
+    border-radius: 50%;
+    background-color: var(--bloom-deep-green);
+    filter: blur(100px);
+    opacity: 0.1;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.hero-accent-1 {
+    width: 300px;
+    height: 300px;
+    right: 0%;
+    top: 20%;
+    background-color: var(--bloom-gold);
+}
+
+.bg-accent-right {
+    width: 50vw;
+    height: 50vw;
+    right: -20%;
+    top: 10%;
+    opacity: 0.05;
+}
+
+.bg-accent-left {
+    width: 40vw;
+    height: 40vw;
+    left: -15%;
+    top: 20%;
+    opacity: 0.03;
+}
+
+/* Color Palette Swatches */
+.color-palette {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.color-swatch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.swatch-color {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.swatch-name {
+    font-family: var(--sans-font);
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: rgba(250, 249, 246, 0.8);
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+    .bloom-headline {
+        font-size: 4.5rem;
+    }
+
+    .bloom-section {
+        padding: 6rem 3rem;
+    }
+
+    .bloom-hero {
+        padding-top: 10rem;
+    }
+
+    .bloom-meta {
+        flex-direction: row;
+        gap: 3rem;
+        border-right: none;
+    }
+
+    .showcase-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2.5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .bloom-headline {
+        font-size: 5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .bloom-subtitle {
+        font-size: 2rem;
+    }
+
+    .bloom-section-title {
+        font-size: 3.5rem;
+    }
+
+    .small-title {
+        font-size: 2.5rem;
+    }
+
+    .bloom-section {
+        padding: 8rem 4rem;
+    }
+
+    .bloom-hero {
+        padding-top: 12rem;
+    }
+
+    .bloom-hero-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+    }
+
+    .bloom-meta {
+        border-right: 1px solid rgba(203, 168, 113, 0.3);
+        border-bottom: none;
+        padding-right: 4rem;
+        padding-bottom: 0;
+    }
+
+    .bloom-overview-grid {
+        grid-template-columns: 1fr 2fr;
+        gap: 4rem;
+    }
+
+    .bloom-split-layout {
+        flex-direction: row;
+        gap: 8rem;
+    }
+
+    .reverse-layout {
+        flex-direction: row-reverse;
+    }
+
+    .bloom-grid-layout {
+        grid-template-columns: 1fr 1fr;
+        gap: 6rem;
+    }
+
+    .mobile-mockup {
+        width: 300px;
+        height: 615px;
+        aspect-ratio: auto;
+        box-shadow: 0 40px 80px rgba(58, 56, 53, 0.08), 0 10px 20px rgba(58, 56, 53, 0.04);
+        margin: 0;
+    }
+
+    .mobile-mockup-group {
+        flex-direction: row;
+        gap: 2rem;
+        justify-content: center;
+    }
+
+    .offset-down {
+        transform: translateY(60px);
+    }
+
+    .showcase-grid {
+        grid-template-columns: repeat(4, 1fr);
+        padding: 2rem 0;
+    }
+
+    .color-palette {
+        gap: 3rem;
+    }
+}

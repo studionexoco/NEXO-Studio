@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexo - Digital Design Studio</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts: Editorial Serif and Refined Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Inter:wght@300;400;500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="cursor"></div>
+
+    <nav class="navbar">
+        <div class="logo">NEXO</div>
+        <ul class="nav-links">
+            <li><a href="#work">Work</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="hero">
+        <div class="hero-content">
+            <h1 class="headline">We design and craft digital experiences.</h1>
+            <p class="subtext">Apps, websites, and digital products.</p>
+        </div>
+        <div class="hero-visual">
+            <img src="Nexo main.png" alt="Honey sculptural 3D hand" class="hand-image">
+        </div>
+    </main>
+
+    <section id="work" class="bg-cream">
+        <div class="container">
+            <h2 class="section-title reveal-up">Selected Work</h2>
+            <div class="work-grid">
+
+                <a href="work/green-occasion/" class="project reveal-up project-link">
+                    <div class="project-image-wrapper">
+                        <img src="work-2-real.png" alt="Green Occasion Website Redesign" class="project-image">
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Green Occasion</h3>
+                        <span class="project-category">Website Redesign</span>
+                    </div>
+                </a>
+
+                <a href="work/bloom-co/" class="project reveal-up project-link">
+                    <div class="project-image-wrapper">
+                        <img src="work-3-real.png" alt="Bloom App Product Design" class="project-image">
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Bloom App</h3>
+                        <span class="project-category">Product Design</span>
+                    </div>
+                </a>
+
+                <a href="work/aot/" class="project reveal-up project-link">
+                    <div class="project-image-wrapper">
+                        <img src="work-4-real.png" alt="AOT Interface UI Concept" class="project-image">
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">AOT Interface</h3>
+                        <span class="project-category">UI Concept</span>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="bg-green">
+        <img src="Nexo main.png" alt="Silhouette" class="about-bg-silhouette">
+        <div class="container about-container">
+            <h2 class="section-title text-gold text-center reveal-up">About Nexo</h2>
+            <p class="about-text text-cream text-center reveal-up">
+                Nexo is a digital design studio focused on crafting thoughtful digital products and refined web
+                experiences through collaboration and design clarity.
+            </p>
+        </div>
+    </section>
+
+    <section id="services" class="bg-cream">
+        <div class="container">
+            <div class="services-grid">
+                <div class="service-item reveal-up">
+                    <h3 class="service-title">App & Product Design</h3>
+                    <p class="service-desc">Crafting intuitive and engaging mobile and desktop applications rooted in
+                        user-centric principles.</p>
+                </div>
+                <div class="service-item reveal-up" style="transition-delay: 0.1s;">
+                    <h3 class="service-title">Website Design</h3>
+                    <p class="service-desc">Building immersive, high-performance websites that elevate brands and
+                        communicate clearly.</p>
+                </div>
+                <div class="service-item reveal-up" style="transition-delay: 0.2s;">
+                    <h3 class="service-title">Digital Experiences</h3>
+                    <p class="service-desc">Developing bespoke digital interactives, animated portfolios, and
+                        experimental web content.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="bg-green">
+        <div class="container contact-container">
+            <div class="contact-header">
+                <h2 class="section-title text-gold">Let’s create together.</h2>
+                <img src="nexo-logo.png" alt="Nexo Logo" class="contact-signature-logo">
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <p class="text-cream">General Inquiries</p>
+                    <a href="mailto:studio.nexo.co@gmail.com" class="contact-link">studio.nexo.co@gmail.com</a>
+
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/nexo.studio.co?igsh=MTU1aHEyeHNhb2xuNA==">Instagram</a>
+                        <a href="https://x.com/nexo_studi32448">Twitter</a>
+                        <a href="https://www.linkedin.com/company/nexo-studio-co/">LinkedIn</a>
+                    </div>
+                </div>
+
+                <form id="contact-form" class="contact-form reveal-up" style="transition-delay: 0.1s;">
+                    <input type="text" placeholder="Name" class="form-input" required>
+                    <input type="email" placeholder="Email" class="form-input" required>
+                    <textarea placeholder="Tell us about your project..." class="form-textarea" required></textarea>
+                    <div class="form-footer">
+                        <button id="submit-btn" type="submit" class="submit-btn">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Custom animated success toast -->
+        <div id="contact-toast" class="toast-notification">
+            <svg class="toast-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+            <span class="toast-message">Message sent successfully</span>
+        </div>
+    </section>
+
+    <footer class="footer bg-green">
+        <div class="container footer-container">
+            <div class="footer-logo text-gold">NEXO</div>
+            <div class="footer-links">
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Use</a>
+                <span class="copyright">© 2026 Nexo Studio. All rights reserved.</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lenis for Smooth Scrolling -->
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+        (function () {
+            emailjs.init("Xt3fDiuEuic0zcAau");
+        })();
+
+        document.getElementById("contact-form")
+            .addEventListener("submit", function (event) {
+                event.preventDefault();
+
+                emailjs.sendForm("service_5zpfoye", "template_56s3r3o", this)
+                    .then(function () {
+                        alert("Message Sent Successfully!");
+                    }, function (error) {
+                        alert("Failed to send message.");
+                    });
+            });
+    </script>
+</body>
+
+</html>

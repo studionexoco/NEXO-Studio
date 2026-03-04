@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AOT — Tactical UI Design | Nexo</title>
+    <link rel="icon" type="image/png" href="../../favicon.png">
+
+    <!-- Google Fonts: Iceland for cinematic HUD, Inter for body -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Iceland&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="aot.css">
+</head>
+
+<body class="aot-theme">
+    <div class="cursor"></div>
+    <div class="hud-grid-overlay"></div>
+
+    <nav class="navbar aot-nav">
+        <a href="../../index.html" class="logo text-white">NEXO</a>
+        <ul class="nav-links">
+            <li><a href="../../index.html#work" class="text-white">Work</a></li>
+            <li><a href="../../index.html#about" class="text-white">About</a></li>
+            <li><a href="../../index.html#contact" class="text-white">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="case-hero relative-container">
+        <!-- Ambient HUD Elements -->
+        <div class="hud-circle hud-top-right rellax" data-rellax-speed="-2"></div>
+        <div class="hud-circle hud-bottom-left rellax" data-rellax-speed="1"></div>
+        <div class="kanji-background rellax" data-rellax-speed="0.5">戦</div>
+
+        <div class="case-hero-content container">
+            <div class="case-hero-text">
+                <div class="hud-line reveal-up"></div>
+                <h1 class="case-headline reveal-up">AOT</h1>
+                <p class="case-subtitle reveal-up" style="transition-delay: 0.1s;">Character Selection Interface</p>
+                <div class="case-description reveal-up" style="transition-delay: 0.2s;">
+                    <p>Designing a cinematic character selection experience inspired by Attack on Titan’s militaristic
+                        tone and narrative intensity.</p>
+                    <p>The interface explores how typography, symbolism, and tactical UI structures can convey character
+                        identity before gameplay begins.</p>
+                </div>
+            </div>
+            <div class="case-hero-visual reveal-up" style="transition-delay: 0.3s;">
+                <img src="aot-1.png" alt="Armin Character Select UI" class="case-main-mockup">
+                <div class="tech-box-accent"></div>
+            </div>
+        </div>
+    </main>
+
+    <section class="case-section summary-section bg-darker">
+        <div class="container grid-2-col">
+            <div class="summary-text reveal-up">
+                <h2 class="section-title hud-title">Project Overview</h2>
+                <p class="case-body">This project explores a game interface system for selecting characters within a
+                    narrative-driven anime combat experience.</p>
+                <p class="case-body">The design focuses on hierarchy, symbolism, and militaristic structure to create
+                    anticipation and immersion.</p>
+            </div>
+            <div class="summary-details aot-details reveal-up" style="transition-delay: 0.1s;">
+                <div class="detail-item">
+                    <span class="detail-label">Role</span>
+                    <span class="detail-value">UI Designer</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Platform</span>
+                    <span class="detail-value">Game Interface Concept</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Domain</span>
+                    <span class="detail-value">Entertainment UI / Systems</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Character UI System -->
+    <section class="case-section bg-black relative-container overflow-hidden">
+        <div class="kanji-side-accent rellax" data-rellax-speed="-1">巨</div>
+        <div class="container align-center reverse-layout">
+            <div class="text-block reveal-up">
+                <div class="hud-target-bracket"></div>
+                <h2 class="section-title hud-title">Character UI System</h2>
+                <p class="case-body mb-small">Each character screen follows a consistent tactical layout:</p>
+                <ul class="case-list aot-list">
+                    <li>[01] Central character render</li>
+                    <li>[02] Symbolic kanji background</li>
+                    <li>[03] Name and metadata</li>
+                    <li>[04] Descriptive narrative text</li>
+                    <li>[05] Faction insignia</li>
+                </ul>
+                <p class="case-body mt-small">This modular system maintains consistency while expressing individual
+                    character identity.</p>
+            </div>
+            <div class="visual-block reveal-up" style="transition-delay: 0.1s;">
+                <div class="mockup-frame dark-frame">
+                    <img src="aot-2.png" alt="Eren Yeager Character Select" class="ui-screen">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interaction Concept -->
+    <section class="case-section bg-darker">
+        <div class="container align-center">
+            <div class="text-block reveal-up">
+                <h2 class="section-title hud-title">Interaction Concept</h2>
+                <p class="case-body mb-small">The selection flow mimics dossier navigation through vertical character
+                    switching.</p>
+                <p class="case-body mb-small">Arrows and directional indicators suggest tactical browsing between
+                    profiles, reinforcing the military theme and deliberate selection pacing.</p>
+                <div class="hud-directional-arrows">
+                    <span class="arrow-up">△</span>
+                    <span class="arrow-down">▽</span>
+                </div>
+            </div>
+            <div class="visual-block reveal-up" style="transition-delay: 0.1s;">
+                <div class="mockup-frame dark-frame">
+                    <img src="aot-3.png" alt="Mikasa Ackerman Character Select" class="ui-screen relative-z">
+                    <div class="hud-circle hud-overlay-circle rellax" data-rellax-speed="-0.5"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- UI Components Showcase -->
+    <section class="case-section bg-black center-text relative-container">
+        <div class="container">
+            <h2 class="section-title hud-title reveal-up">UI Components</h2>
+            <p class="case-body reveal-up" style="transition-delay: 0.1s;">The interface combines radial rings, kanji
+                identity shapes, grid lines, data panels, insignia placement, and navigation arrows into a unified
+                tactical HUD visual language.</p>
+
+            <div class="minimal-showcase mt-large reveal-up" style="transition-delay: 0.2s;">
+                <img src="aot-4.png" alt="AOT UI Insignia Elements" class="ui-screen border-screen">
+            </div>
+        </div>
+    </section>
+
+    <section class="case-section bg-darker center-text">
+        <div class="container narrow-container relative-container">
+            <h2 class="section-title hud-title text-gold reveal-up">Design Reflection</h2>
+            <div class="hud-bracket-wrap reveal-up" style="transition-delay: 0.1s;">
+                <p class="case-body text-light">This project explores how entertainment interfaces can communicate story
+                    and identity through visual structure.</p>
+                <p class="case-body text-light mt-small">By combining anime symbolism with militaristic UI systems, the
+                    design demonstrates how character selection can become an immersive narrative moment rather than a
+                    functional menu.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer bg-black hud-footer">
+        <div class="container footer-container">
+            <a href="../../index.html" class="footer-logo text-white">NEXO<span class="hud-small">SYSTEM
+                    OFFLINE</span></a>
+            <div class="footer-links">
+                <a href="#" class="text-gray">Privacy Policy</a>
+                <a href="#" class="text-gray">Terms of Service</a>
+                <span class="copyright text-gray">© 2026 Nexo Studio. Tactical Branch.</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"></script>
+    <script src="../../script.js"></script>
+    <script>
+        // Initialize Rellax for parallax HUD elements
+        var rellax = new Rellax('.rellax', {
+            center: true,
+            wrapper: null,
+            round: true,
+            vertical: true,
+            horizontal: false
+        });
+    </script>
+</body>
+
+</html>
